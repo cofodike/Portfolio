@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chigozie Ofodike">
+    <meta name="description" content="My Portfolio Page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chigozie Ofodike | Software Engineer</title>
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--JS Scripts -->
+    <script type="module" src="js/main.js"></script>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <main>
+    <div id="page-container">
+        <div id="content-wrap">
+        <section>
+            <h1>Chigozie Ofodike</h1>
+    <!-- Navbar -->
+
+        <nav>
+            <ul class="navigation">
+            <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#skills" class="nav-links">Skills</a></li>
+            <li><a href="#projects" class="nav-links">Projects</a></li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <h2 class="bio-title">About Me</h2>
+            <img src="images/wfh_1.svg" alt="my face" loading="lazy" class="hero-img" width="200" height="200">
+            <aside class="bio animate_animated animate_shakex">
+                <h3>Who am I?</h3>
+                <p class="bio-text">
+                    Hi, my name is Chigozie Ofodike, I am passionate about technology and building communities. Get to know me :).
+                </p>
+            </aside>
+        </section>
+
+            <!-- More about -->
+            <section  class="more-about">
+                <h2>More About Me</h2>
+                <p>
+                    I have worked with technology all of my life, first off attempting to take apart and rebuild broken tech as a kid, then teaching myself software development individually. I took a break for a while, shifting my focus to other more pertinent things, but I recently return to my favorite subsets, being fullstack development and machine learning.
+                </p>
+            </section>
+
+            <!-- Skills section -->
+            <section class="skills" id="skills">
+                <h2 class="skills-header">My Top Skills</h2>
+                <div class="skills-wrapper">
+                    <div>
+                        <img src="icons/icons8-html-5.svg" alt="HTML5" loading="lazy" class="icon icon-card">
+                        <img src="icons/icons8-css3.svg" alt="CSS" loading="lazy" class="icon icon-card">
+                        <img src="icons/icons8-javascript.svg" alt="JavaScrip" loading="lazy" class="icon icon-card">
+                        <img src="icons/icons8-react-native.svg" alt="react" loading="lazy" class="icon icon-card" />
+                        <img src="icons/icons8-git.svg" alt="version control" loading="lazy" class="icon icon-card" width="48px" height="48px"/>
+                        <img src="icons/logo-python.svg" alt="python coding language" loading="lazy" class="icon icon-card" width="48px" height="48px"/>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects section -->
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <figure>
+                        <h4 class="project-title">LTS Page</h4>
+                        <br>
+                        <img
+                            src="images/LTS.png"
+                            alt="rock-paper-scissors game"
+                            loading="lazy"
+                            class="project-pic"
+                        />
+                        <figcaption>
+                            A simulated webpage for client "Little Taco Shop" my intro to HTML & CSS. <br><a>Check it out.</a>
+                        </figcaption>
+                </figure>
+                </div>
+                <div class="project-container project-card">
+                    <figure>
+                        <h4 class="project-title">Rock-Paper-Scissors</h4>
+                        <br>
+
+                        <img
+                            src="images/rock-paper-scissors.png"
+                            alt="rock-paper-scissors"
+                            loading="lazy"
+                            class="project-pic"
+                            height="820"
+                            width="514"
+                        />
+                        <figcaption>
+                            An interactive game of rock-paper-scissors, user can enter a choice based on options vs computer's choice. Written with HTML and JavaScript.
+                                <br><a>Check it out.</a>
+                        </figcaption>
+                </figure>
+                </div>
+                <div class="project-container project-card">
+                <figure>
+                <img
+                    src="images/shopping-list.png"
+                    alt="Shopping list written with TypeScript"
+                    loading="lazy"
+                    class="project-pic"
+                />
+                </figure>
+                <figure>
+                <h3 class="project-title">Shopping List with TypeScript.</h3>
+                <p class="project-details">
+                    Allows users to add, remove and check out items written with TypeScript and Vue for development help.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </figure>
+                </div>
+            </div>
+            </section>
+            <!-- Contact section -->
+            <section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="sender-name"
+                        placeholder="Enter Your Name"
+                        class="input-field"
+                        required
+                    />
+                    </div>
+                    <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Enter Your Email"
+                        class="input-field"
+                        required
+                    />
+                    </div>
+                    <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        cols="15"
+                        rows="10"
+                        placeholder="Enter Your Message"
+                        name="message"
+                        class="input-field"
+                        required
+                    ></textarea>
+                    </div>
+                    <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                    />
+                </form>
+                </div>
+            </div>
+            </section>
+            <!-- Social accounts - Fixed to the right -->
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/chigozieofodike/" target="_blank"
+                ><img
+                    src="icons/icons8-linkedin-circled.gif"
+                    alt="Linkedin"
+                    loading="lazy"
+                    class="socicon"
+                /></a>
+                <a href="https://github.com/cofodike/" target="_blank"
+                ><img src="icons/icons8-github.gif" alt="Github" class="socicon"
+                /></a>
+        </div>            
+        <!-- Footer section -->
+        <footer id="footer">
+            <p class="copy">&copy; Copyright 2023</p>
+            <p class="copy">
+            Built with &#x2661; by
+            <a href="https://www.linkedin.com/in/chigozieofodike/" target="_blank"
+                >Chigozie Ofodike (CozyChigozie)</a>
+            </p>
+    </footer>
+        <!-- Website scripts -->
+
+        <!-- Ion icons scripts -->
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+</div>
+  </body>
+</main>
+</html>
